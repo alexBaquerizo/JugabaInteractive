@@ -1,0 +1,23 @@
+<h3>Listado de Alumnos</h3><br/>
+<form method="get" action="/admin/alumnos/new">
+	<button type="submit">
+		Insertar Alumno
+	</button>
+</form>
+<table>
+<% var i; for (i=0;i<alumnos.length;i++){ %>
+	<%if(session.user){%>
+		<td><%= alumnos[i].id %>-<%= alumnos[i].nombre %> <%= alumnos[i].apellido1 %> <%= alumnos[i].apellido2 %> - DNI: <%= alumnos[i].dni %></td>
+		<td><a href="/admin/alumnos/<%= alumnos[i].id %>/edit"><button>editar</button></a></td>
+		<td>
+			<form method="post" action="/admin/alumnos/<%= alumnos[i].id %>?_method=delete">
+				<button type="submit" onclick="return confirm('Esta seguro de borrar al alumno con el DNI: <%= alumnos[i].dni %>?');">
+					borrar
+				</button>
+			</form>
+		</td>
+                
+	<%}%>
+</tr>
+<% } %>
+</table>

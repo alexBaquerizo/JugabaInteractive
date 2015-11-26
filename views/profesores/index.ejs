@@ -1,0 +1,40 @@
+<table border=1 style="padding:8px;">
+<tr>
+			<td><h3>ID</h3></td>
+			<td><h3>APELLIDOS</h3></td>
+			<td><h3>NOMBRE</h3></td>
+			<td><h3>EMAIL</h3></td>
+			<td><h3>DNI</h3></td>
+			<td><h3>MOVIL</h3></td>
+			<td><h3>DEPARTAMENTO</h3></td>
+			<td colspan="2"><h3>MENU</h3></td>
+</tr>
+
+<% var i; for (i=0;i<profesores.length;i++){ %>
+<tr>
+	<%if(session.user){%>
+		<tr>
+			<td><a href="/admin/profesores/<%= profesores[i].id %>"><%= profesores[i].id %></a></td>
+			<td><%= profesores[i].apellidos %></td>
+			<td><%= profesores[i].nombre %></td>
+			<td><%= profesores[i].email %></td>
+			<td><%= profesores[i].dni %></td> 
+			<td><%= profesores[i].movil %></td>
+			<td><%= profesores[i].departamento %></td>
+			<td><a href="/admin/profesores/<%= profesores[i].id %>/edit"><button>editar</button></a></td>
+			<td>
+				<form method="post" action="/admin/profesores/<%= profesores[i].id %>?_method=delete">
+					<button type="submit" onclick="return confirm('Borrar: <%= profesores[i].apellido %>');">borrar</button>
+				</form>
+			</td>
+		</tr>
+	<%}%>
+</tr>
+<% } %>
+</table>
+<br />
+<table>
+<td>
+	<a href="/admin/profesores/new"><button type="button">Añadir Profesor</button></a>
+</td>
+</table>

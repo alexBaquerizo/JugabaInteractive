@@ -1,0 +1,17 @@
+<table>
+<% var i; for (i=0;i<users.length;i++){ %>
+<tr>
+	<%if(session.user){%>
+		<td><%= users[i].id %>-<%= users[i].username %></td>
+		<td><a href="/admin/users/<%= users[i].id %>/edit"><button>editar</button></a></td>
+		<td>
+			<form method="post" action="/admin/users/<%= users[i].id %>?_method=delete">
+				<button type="submit" onclick="return confirm('Borrar: <%= users[i].username %>');">
+					borrar
+				</button>
+			</form>
+		</td>
+	<%}%>
+</tr>
+<% } %>
+</table>

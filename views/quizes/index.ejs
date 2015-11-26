@@ -1,0 +1,26 @@
+<table >
+<% var i; for (i=0; i < quizes.length; i ++) { %>
+	<tr>
+		<td align="left">
+			<%= (i+1)+".  "%><a href="/admin/quizes/<%= quizes[i].id %>"><%=  quizes[i].pregunta %></a>
+		</td>
+		<%if(session.user) {%>
+			<td>
+				<a href="/admin/quizes/<%= quizes[i].id %>/edit"><button>editar</button></a>
+			</td>
+			<td>
+				<form method="post" action="/admin/quizes/<%= quizes[i].id %>?_method=delete">
+					<button type="submit" onClick="return confirm('Borrar: <% quizes[i].pregunta %>');">
+						borrar
+					</button>
+				</form>
+			</td>
+		<%}%>
+	</tr>
+<% } %>
+</table>
+<p>
+	<%if(session.user) {%>
+		<a href="/admin/quizes/new"><button type="button">Crear pregunta</button></a>
+	<%}%>
+</p>

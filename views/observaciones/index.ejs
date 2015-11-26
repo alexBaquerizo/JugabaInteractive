@@ -1,0 +1,17 @@
+<table>
+<% var i; for (i=0;i<observaciones.length;i++){ %>
+<tr>
+	<%if(session.user){%>
+		<td><a href="/admin/observaciones/<%= observaciones[i].id %>"><%= observaciones[i].id %>-<%= observaciones[i].profesor %></a></td>
+		<td><a href="/admin/observaciones/<%= observaciones[i].id %>/edit"><button>editar</button></a></td>
+		<td>
+			<form method="post" action="/admin/observaciones/<%= observaciones[i].id %>?_method=delete">
+				<button type="submit" onclick="return confirm('Borrar: <%= observaciones[i].profesor %>');">
+					borrar
+				</button>
+			</form>
+		</td>
+	<%}%>
+</tr>
+<% } %>
+</table>

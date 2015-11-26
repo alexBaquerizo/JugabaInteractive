@@ -1,0 +1,96 @@
+
+#slider{
+margin:0 2%;
+margin-top: 20px;
+margin-bottom: 35px;
+box-shadow: 0em 0em black;
+-webkit-box-shadow: 0 0em 0em black;
+-moz-box-shadow: 0 0em 0em black;
+-o-box-shadow: 0 0em 0em black;
+}
+
+#slider figure {
+margin: 0;
+width: 100%;
+background: #fff;
+position: absolute;
+}
+
+#slider img {
+	width:100%;
+}
+
+#slider figcaption {
+position: absolute;
+top: 60%;
+height: 30%;
+color:black;
+font-size: 9pt;
+text-align: justify;
+background:whitesmoke;/** Fondo de las letras **/
+opacity:.75;
+padding: 12px 2%;
+
+}
+
+
+/* ESTILOS DEL SLIDESHOW */
+ 
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+ 
+ /**
+.bjqs-caption{
+color:black;
+font-size: 9pt;
+background:whitesmoke;
+opacity:.75;
+}
+**/
+ 
+/* BOTONERA UBICADA AL PIE DEL SLIDESHOW */
+ol.bjqs-markers{
+margin-top:10px;/** distancia entre la imagen y los numeros **/
+}
+ol.bjqs-markers li a{
+padding: 5px 10px;
+background: #0F9EDC;
+color: #fff;
+margin: 5px;
+text-decoration: none;
+transition:background .5s ease;
+-webkit-transition:background .5s ease;
+-moz-transition:background .5s ease;
+-o-transition:background .5s ease;
+}
+li.active-marker a, ol.bjqs-markers li a:hover{
+background:gray!important;
+}
+ 
+/* CONTROLES ATRAS Y ADELANTE */
+ul.bjqs-controls.v-centered li a {
+display: block;
+padding: 10px;
+background: whitesmoke;
+color: #000;
+text-decoration: none;
+opacity:.75;
+ 
+transition:color .5s ease, background .5s ease;
+-webkit-transition:color .5s ease, background .5s ease;
+-moz-transition:color .5s ease, background .5s ease;
+-o-transition:color .5s ease, background .5s ease;
+}
+ul.bjqs-controls.v-centered li a:hover{
+    background:#0F9EDC;
+    color:#fff;
+}

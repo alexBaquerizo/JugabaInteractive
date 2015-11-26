@@ -1,0 +1,52 @@
+<table border=1 align="left">
+	<tr>
+		<tr align="left">
+			<td><h3>ID</h3></td>
+			<td><%= profesor.id %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>NOMBRE</h3></td>
+			<td><%= profesor.nombre %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>APELLIDOS</h3></td>
+			<td><%= profesor.apellidos %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>DNI</h3></td>
+			<td><%= profesor.dni %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>EMAIL</h3></td>
+			<td><%= profesor.email %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>MOVIL</h3></td>
+			<td><%= profesor.movil %></td>
+		</tr>
+		<tr align="left">
+			<td><h3>DEPARTAMENTO</h3></td>
+			<td><%= profesor.departamento %></td>
+		</tr>
+	</tr>
+</table>
+
+
+
+<table border=1 align="rigth">
+	<tr>
+		<th colspan=3><h3>Cuestionarios:</h3></th>
+	</tr>
+	<tr>
+		<th><h3>CREADOR</h3></th>
+		<th><h3>OBSERVACIONES</h3></th>
+		<th><h3>FECHA</h3></th>
+	<tr>
+	<% cuestionarios.forEach(function(cuestionario){%>
+	<tr>
+		<td><%= cuestionario.creador %></td>
+		<td><%= cuestionario.observaciones %></td>
+		<td><%= cuestionario.fechaFin.toDateString() %></td>
+	<tr>
+		<%});%>
+</table>

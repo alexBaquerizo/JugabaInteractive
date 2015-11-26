@@ -1,0 +1,19 @@
+<table>
+<% var i; for (i=0;i<grupos.length;i++){ %>
+<tr>
+	<%if(session.user){%>
+		<tr align=left>
+			<td><a href='/admin/grupos/<%= grupos[i].id %>'><%= grupos[i].id %> - <%= grupos[i].curso %>º <%= grupos[i].grupo %></a></td>
+			<td><a href="/admin/grupos/<%= grupos[i].id %>/edit"><button>Editar</button></a></td>
+			<td>
+				<form method="post" action="/admin/grupos/<%= grupos[i].id %>?_method=delete">
+					<button type="submit" onclick="return confirm('Borrar: <%= grupos[i].tutor %>');">
+						Borrar
+					</button>
+				</form>
+			</td>
+		</tr>
+	<%}%>
+</tr>
+<% } %>
+</table>

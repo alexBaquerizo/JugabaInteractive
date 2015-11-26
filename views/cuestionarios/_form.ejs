@@ -1,0 +1,18 @@
+<p>
+<% if(cuestionario.Profesor) { %>
+<label for="Cre" class="rem">Creador:</label>
+<input type="hidden" id="dni" name="cuestionario[creador]" value="<%= session.profesor.id %>" />
+	<%= cuestionario.Profesor.nombre %>
+<% } %>
+</p>
+<p>
+<label for="Obs" class="rem">Observaciones:</label>
+<input type="text" id="ape1" name="cuestionario[observaciones]" value="<%= cuestionario.observaciones %>" />
+</p>
+<p>
+<label for="fechF" class="rem">Fecha de Finalizacion:</label>
+<input type="text" id="ape2" name="cuestionario[fechaFin]" value="<%= cuestionario.fechaFin %>" />
+</p>
+<a href="/admin/cuestionarios"><button type="button">Cancelar</button></a>
+
+<input type="submit" value="Guardar">
