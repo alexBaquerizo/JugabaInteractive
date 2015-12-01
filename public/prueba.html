@@ -1,0 +1,40 @@
+<html> 
+<head> 
+<script> 
+var capas = ["capa1", "capa2", "capa3", "capa4", "capa5"]; 
+function mostrar(capa) { 
+for (i = 0, total = capas.length; i < total; i ++) 
+document.getElementById(capas[i]).style.display = (capas[i] == capa) ? "block":"none"; 
+} 
+</script> 
+
+<style type="text/css"> 
+<!-- 
+#capa1, #capa2, #capa3, #capa4, #capa5  {display: none;} 
+
+.enlace01 a {color:#6699CC; text-decoration:none; font-weight:bold} 
+.enlace01 a:hover {color:#006699; font-weight:bold; text-decoration:none} 
+--> 
+</style> 
+</head> 
+<body class="enlace01"> 
+<a style="cursor:pointer" onclick="mostrar('capa1')"> mostrar capa 1 </a> &raquo; 
+<a style="cursor:pointer" onclick="mostrar('capa2')"> mostrar capa 2 </a> &raquo; 
+<a style="cursor:pointer" onclick="mostrar('capa3')"> mostrar capa 3 </a> &raquo; 
+<a style="cursor:pointer" onclick="mostrar('capa4')"> mostrar capa 4 </a> &raquo; 
+<div id="capa1" > 
+<a style="cursor:pointer" onclick="mostrar('capa5')">contenido de capa1</a> 
+</div> 
+<div id="capa5" > 
+contenido de capa5 wedmasterayuda.es.tl 
+</div> 
+<div id="capa2" > 
+contenido de capa2 wedmasterayuda.es.tl 
+</div> 
+<div id="capa3" > 
+contenido de capa3 wedmasterayuda.es.tl 
+</div> 
+<div id="capa4" > 
+contenido de capa4 wedmasterayuda.es.tl 
+</div> 
+</body> 

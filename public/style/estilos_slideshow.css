@@ -61,12 +61,15 @@ opacity:.75;
 ol.bjqs-markers{
 margin-top:10px;/** distancia entre la imagen y los numeros **/
 }
+
 ol.bjqs-markers li a{
 padding: 5px 10px;
 background: #0F9EDC;
 color: #fff;
 margin: 5px;
 text-decoration: none;
+border-radius: 50%;
+
 transition:background .5s ease;
 -webkit-transition:background .5s ease;
 -moz-transition:background .5s ease;
@@ -74,6 +77,7 @@ transition:background .5s ease;
 }
 li.active-marker a, ol.bjqs-markers li a:hover{
 background:gray!important;
+
 }
  
 /* CONTROLES ATRAS Y ADELANTE */

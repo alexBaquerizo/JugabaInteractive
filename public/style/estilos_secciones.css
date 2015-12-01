@@ -5,6 +5,7 @@
 /*** Seccion de Informacion inicial ***/
 
 .recuadro_comun{
+	clear: both;
 	width: 95.6%;
 	margin: 2%;
 	padding: 0;
@@ -86,6 +87,7 @@
 /*** Seccion de Servicios ***/
 
 #servicios{
+	clear: both;
 	float: left;
 	position:relative;
 	margin: 0 2%;
@@ -108,7 +110,7 @@
 
 .recuadro_titulo{
 	clear: both;
-	position: absolute;
+	position: relative;
 	top:0px;
 	left:0px;
 	height:35px;
@@ -177,6 +179,7 @@
 
 /*Edición de la seccion noticias*/
 #noticias{
+	clear: both;
 	float: left;
 	position:relative;
 	margin: 2%;
@@ -209,9 +212,9 @@
 	background: linear-gradient(to bottom, #207ce5 0%, #499bea 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea', GradientType=0 );
 
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 
 }
 
@@ -305,6 +308,7 @@
 /*Edición del Footer*/
 
 footer{
+	clear: both;
 	position:relative;
 }
 

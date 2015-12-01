@@ -4,10 +4,8 @@
 
 /*** Edicion pagina servicios ***/
 
-.oculto {display: none;}
-.visible {display: inline;}
 
-.recuadro_comun{clear:both;}
+#contenido1, #contenido2, #contenido3, #contenido4, #contenido5, #contenido6, #contenido7 {display: none;} 
 
 .recuadro_comun article{
 	clear:both;
@@ -21,6 +19,7 @@
 }
 
 .recuadro_comun article h2{font-size: 1.4em;padding: 0;text-align : center;}
+.recuadro_comun article h3{font-size: 1.1em;padding: 0;text-align : center;}
 .recuadro_comun article li{
 	list-style-image: url("/img/lista.png");
 	margin: 10px 0;
@@ -55,7 +54,7 @@
 .navegar_servicios li a {
 	/*background-color:#7192b7;*/
 	color:#3F3F3F;
-	font-size:0.8em;
+	font-size:0.75em;
 	font-weight:bold;
 	text-decoration:none;
 	padding:10px 10px;
@@ -72,5 +71,3 @@
     -webkit-transition: background 0.2s ease-in;
     -o-transition: background 0.2s ease-in;
 }
-
-

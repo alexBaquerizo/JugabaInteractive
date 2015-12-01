@@ -3,29 +3,34 @@
 <html lang="es">
  
 <head>
-<title>
-  <% if(title == "undefined"){ %>
-    title = "Jugaba Interactive Web";
-  <% } %>
-  <%= title %>
-</title>
-<meta charset="utf-8" />
-<!-- Inserción de estilos -->
-<link rel="stylesheet" href="/style/estilos_cabecera.css" />
-<link href="/style/estilos_secciones.css" rel="stylesheet" type="text/css" />
-<link href="/style/estilos_servicios.css" rel="stylesheet" type="text/css" />
+  <title>
+    <% if(title == "undefined"){ %>
+      title = "Jugaba Interactive Web";
+    <% } %>
+    <%= title %>
+  </title>
+  <meta charset="utf-8" />
+  <!-- Inserción de estilos -->
+  <link rel="stylesheet" href="/style/estilos_cabecera.css" />
+  <link href="/style/estilos_secciones.css" rel="stylesheet" type="text/css" />
 
-<link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
-<!-- Inserción de estilo del código Slide -->
-<link href="/style/estilos_slideshow.css" rel="stylesheet" type="text/css" />
+  <!-- Inserción de estilo del código Slide -->
+  <link href="/style/estilos_slideshow.css" rel="stylesheet" type="text/css" />
 
-<!-- Inserción de jquery para slideshow -->
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="/js/bjqs.min.js"></script>
-<script src="/js/slideshow.js"></script>
+  <!-- Inserción de jquery para slideshow -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="/js/bjqs.min.js"></script>
+  <script src="/js/slideshow.js"></script>
 
-<script src="/js/servicios.js"></script>
+  <!-- servicios -->
+  <link href="/style/estilos_servicios.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/style/scroll_servicios.css" />
+
+  <script src="/js/servicios.js"></script>
+  <script type="text/javascript" src="/js/scroll/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/js/scroll/jquery.als-1.7.min.js"></script>
 
 </head>
  

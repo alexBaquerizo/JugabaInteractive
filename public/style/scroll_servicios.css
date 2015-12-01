@@ -1,0 +1,80 @@
+#lista1 ul,#lista1 li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+
+
+}
+/********************************
+ * generic als elements styling
+ ********************************/
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.als-wrapper {
+	width: 70%;
+	position: relative;
+	list-style: none;
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	overflow: hidden;
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+}
+
+
+/**************************
+ * specific als elements
+ * styling for #lista1
+ **************************/
+
+#lista1 {
+	margin: 30px 10%;
+}
+
+#lista1 .als-item {
+	margin: 0px 30px;
+	min-height: 152px;
+	min-width: 128px;
+}
+
+#lista1 .als-item img {
+
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+
+#lista1 .als-prev, #lista1 .als-next {
+	top: 58px;
+	width: 4%;
+	height: 22px;
+	z-index: 1;
+}
+
+#lista1 .als-prev {
+	left: 10%;
+}
+
+#lista1 .als-next {
+	right: 9%;
+}
+
