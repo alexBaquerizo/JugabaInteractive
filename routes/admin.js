@@ -112,6 +112,8 @@ router.get('/', function(req, res, next) {
 
 //Rutas de la web.
 router.get('/servicios', serviciosController.index);
+router.get('/servicios/videojuegos', serviciosController.videojuegos);
+
 router.get('/proyectos', proyectosController.index);
 
 module.exports = router;

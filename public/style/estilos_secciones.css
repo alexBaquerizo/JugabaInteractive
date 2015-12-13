@@ -13,6 +13,18 @@
 	position:relative;
 	float:left;
 
+
+	background: #F6F6F6;
+
+	border-width: thin; 
+	border-style: solid;
+	border-color: #E6E6E6;
+
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+    /*
 	background-color: #e3e0e3;
 	-webkit-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
 	-moz-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
@@ -25,6 +37,8 @@
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
+	*/
+
 }
 
 .barra_titulos{
@@ -51,11 +65,12 @@
 	background: -ms-linear-gradient(top, #b3b3b3 0%, #8c8c8c 100%);
 	background: linear-gradient(to bottom, #b3b3b3 0%, #8c8c8c 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3b3b3', endColorstr='#8c8c8c', GradientType=0 );
-	*/
+	
 
 	border-radius: 5px 5px 0px 0px;
 	-moz-border-radius: 5px 5px 0px 0px;
 	-webkit-border-radius: 5px 5px 0px 0px;
+	*/
 
 }
 
@@ -307,9 +322,12 @@
 
 /*Edición del Footer*/
 
+.clearfooter {clear: both;}
+
 footer{
-	clear: both;
-	position:relative;
+	width: 100%;
+	position: relative;
+	clear:both;
 }
 
 .comun_footer{

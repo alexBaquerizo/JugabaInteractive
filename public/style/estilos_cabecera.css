@@ -1,23 +1,19 @@
 
 html, body{
+	width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0 auto;
 }
 
-body{
-	position: absolute;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11pt;
-	width: 100%;
-
-}
+body{font-family: Arial, Helvetica, sans-serif;font-size: 11pt;}
 
 #contenedor_Fondo{
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
+	min-height:100%;
 
 	background: #c7c7c7;
 	background: -moz-linear-gradient(top, #c7c7c7 0%, #616161 100%);
@@ -30,17 +26,29 @@ body{
 }
 
 #contenedor_Principal{
-
 	position: relative;
 	top:0px;
 	margin: 0 auto;
-	width: 70%;
-	height: 100%;
+	width: 80%;
+	min-height:100%;
+	clear:both;
 
 	background-color: #e3e0e3;
 	-webkit-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
 	-moz-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
 	box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
+}
+
+#contenedor_Principal p{
+	font-size: 0.85em;
+	font-weight:normal;
+	text-align : justify; 
+	padding: 0 2%;
+}
+
+#no_footer{
+	min-height:100%;
+
 
 }
 

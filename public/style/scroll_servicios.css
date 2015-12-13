@@ -18,7 +18,7 @@
 }
 
 .als-wrapper {
-	width: 70%;
+	width: 100%;
 	position: relative;
 	list-style: none;
 }
@@ -45,11 +45,11 @@
  **************************/
 
 #lista1 {
-	margin: 30px 10%;
+	margin: 15px 0;
 }
 
 #lista1 .als-item {
-	margin: 0px 30px;
+	margin: 0px 25px;
 	min-height: 152px;
 	min-width: 128px;
 }
@@ -59,22 +59,22 @@
 	position: relative;
 	display: block;
 	vertical-align: middle;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	overflow: hidden;
 }
 
 #lista1 .als-prev, #lista1 .als-next {
 	top: 58px;
-	width: 4%;
+	width: 3%;
 	height: 22px;
 	z-index: 1;
 }
 
 #lista1 .als-prev {
-	left: 10%;
+	left: 6%;
 }
 
 #lista1 .als-next {
-	right: 9%;
+	right: 4%;
 }
 

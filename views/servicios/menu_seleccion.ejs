@@ -1,0 +1,49 @@
+<!-- Menu de Seleccion -->
+<section class="recuadro_servicios">
+	<div class="barra_titulos"><h2>SERVICIOS</h2></div>
+	<div class="titulos_principales"><h2>DESCUBRE NUESTROS SERVICIOS HACIENDO CLIC SOBRE UNO DE ELLOS</h2></div>
+		<div id="menu_servicios">
+			<div id="lista1" class="als-container">
+				<span class="als-prev"><img src="/img/img-servicios/flecha_izquierda.png" alt="prev" title="previous" /></span>
+				<div class="als-viewport">
+					<nav class="navegar_servicios">
+						<ul class="als-wrapper">
+							<li class="als-item"><a href="/index/servicios/videojuegos"><img src="/img/img-servicios/calculator.png" alt="desarrollo videojuegos">VIDEOJUEGOS</img></a></li>
+
+							<li class="als-item"><a id="enlace_2" onclick="muestra('contenido2');"><img src="/img/img-servicios/light_bulb.png" alt="entornos interactivos">ENTORNOS INTERACTIVOS</img></a></li>
+
+							<li class="als-item"><a id="enlace_3" onclick="muestra('contenido3');"><img src="/img/img-servicios/card.png" alt="publicidad 3D">PUBLICIDAD 3D</img></a></li>
+
+							<li class="als-item"><a id="enlace_4" onclick="muestra('contenido4');"><img src="/img/img-servicios/chess.png" alt="cortos animados">CORTOS ANIMADOS</img></a></li>
+
+							<li class="als-item"><a id="enlace_5" onclick="muestra('contenido5');"><img src="/img/img-servicios/clock.png" alt="aplicaciones">APLICACIONES</img></a></li>
+
+							<li class="als-item"><a id="enlace_6" onclick="muestra('contenido6');"><img src="/img/img-servicios/heart.png" alt="visualizacion 3d">VISUALIZACION 3D</img></a></li>
+
+							<li class="als-item"><a id="enlace_7" onclick="muestra('contenido7');"><img src="/img/img-servicios/map.png" alt="web y mantenimiento"> WEB Y MANTENIMIENTO</img></a></li>
+
+						</ul>
+					</nav>
+			</div>
+			<span class="als-next"><img src="/img/img-servicios/flecha_derecha.png" alt="next" title="next" /></span>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.onload = function(){
+				$("#lista1").als({
+					visible_items: 4,
+					scrolling_items: 2,
+					orientation: "horizontal",
+					circular: "yes",
+					autoscroll: "no",
+					interval: 5000,
+					speed: 500,
+					easing: "linear",
+					direction: "right",
+					start_from: 0
+				});
+			}
+
+</script>

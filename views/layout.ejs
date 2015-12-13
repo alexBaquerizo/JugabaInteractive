@@ -4,10 +4,7 @@
  
 <head>
   <title>
-    <% if(title == "undefined"){ %>
-      title = "Jugaba Interactive Web";
-    <% } %>
-    <%= title %>
+
   </title>
   <meta charset="utf-8" />
   <!-- Inserción de estilos -->
@@ -27,6 +24,7 @@
   <!-- servicios -->
   <link href="/style/estilos_servicios.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/style/scroll_servicios.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/style/style2.css" />
 
   <script src="/js/servicios.js"></script>
   <script type="text/javascript" src="/js/scroll/jquery-2.1.1.min.js"></script>
@@ -47,7 +45,8 @@
       </ul>
     </div>
     <div id="contenedor_Principal">
-      
+      <div id="no_footer">
+
         <header>
           <img class="logo" src="/img/logo.png" alt="logotipo" width="230" height="80">
           <div id="menu_horizontal">
@@ -64,70 +63,75 @@
           </div>
         </header>
 
-    	<div id="contenido_index">
-			 <% if(typeof errors != "undefined" && errors != null  && errors.length>0){ %>
-				  <span id='ErrorMsgs'>
-					Corregir errores:<br />
-					<% for (var i in errors){ %>
-						<span> <%= errors[i].message %> </span><br />
-					<% } %>
-				</span>	
-				<% } %>
-		    <div><%- body %></div>
-      </div>
-
-    	 <footer>
-        <div class="comun_footer">
-          <nav class="nav_footer">
-            <ul>
-              <li><h2>Navegación</h2></li>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="asignaturas.html">Asigaturas</a></li>
-              <li><a href="alumnos.html">Alumnos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-        
-          <nav class="nav_footer">
-            <ul>
-              <li><h2>Navegación</h2></li>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="asignaturas.html">Asigaturas</a></li>
-              <li><a href="alumnos.html">Alumnos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-  
-          <nav class="nav_footer">
-            <ul>
-              <li><h2>Navegación</h2></li>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="asignaturas.html">Asigaturas</a></li>
-              <li><a href="alumnos.html">Alumnos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-
-          <nav class="nav_footer">
-            <ul>
-              <li><h2>Navegación</h2></li>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="asignaturas.html">Asigaturas</a></li>
-              <li><a href="alumnos.html">Alumnos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-      
-          <div class="comun_footer2">
-            <h4>Calle Cabo de San Antonio, 22,30740 San Pedro del Pinatar,Murcia</h4>
-          </div>
-          <div class="comun_footer2">
-            <h4>Jugaba Interactive - 2015©</h4>
-          </div>
+      	<div id="contenido_index">
+  			 <% if(typeof errors != "undefined" && errors != null  && errors.length>0){ %>
+  				  <span id='ErrorMsgs'>
+  					Corregir errores:<br />
+  					<% for (var i in errors){ %>
+  						<span> <%= errors[i].message %> </span><br />
+  					<% } %>
+  				</span>	
+  				<% } %>
+  		    <div><%- body %></div>
         </div>
-      </footer>
-      <div id="final"></div>
+        <div class="clearfooter"></div>
+
+      </div>
+ 
     </div>
+   
+    <footer>
+          <div class="comun_footer">
+            <nav class="nav_footer">
+              <ul>
+                <li><h2>Navegación</h2></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asignaturas.html">Asigaturas</a></li>
+                <li><a href="alumnos.html">Alumnos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+            
+            <nav class="nav_footer">
+              <ul>
+                <li><h2>Navegación</h2></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asignaturas.html">Asigaturas</a></li>
+                <li><a href="alumnos.html">Alumnos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+
+            <nav class="nav_footer">
+              <ul>
+                <li><h2>Navegación</h2></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asignaturas.html">Asigaturas</a></li>
+                <li><a href="alumnos.html">Alumnos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+
+            <nav class="nav_footer">
+              <ul>
+                <li><h2>Navegación</h2></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="asignaturas.html">Asigaturas</a></li>
+                <li><a href="alumnos.html">Alumnos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+        
+            <div class="comun_footer2">
+              <h4>Calle Cabo de San Antonio, 22,30740 San Pedro del Pinatar,Murcia</h4>
+            </div>
+            <div class="comun_footer2">
+              <h4>Jugaba Interactive - 2015©</h4>
+            </div>
+          </div>
+      </footer>
+
+      <div id="final"></div>
   </div>
 </body>
 </html>
