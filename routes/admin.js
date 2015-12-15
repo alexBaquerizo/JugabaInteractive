@@ -19,7 +19,7 @@ var alumnoController = require('../controllers/alumno_controller');
 var grupoController = require('../controllers/grupo_controller');
 var materiaController = require('../controllers/materia_controller');
 
-var novedadesController = require('../controllers/novedades_controller');
+
 
 // Autoload de comandos
 router.param('alumnoId', alumnoController.load);//autoload :userId
@@ -32,7 +32,7 @@ router.param('profesorId', profesorController.load);//autoload :profesorId
 router.param('quizId',quizController.load); //autoload :quizId
 router.param('userId', userController.load);//autoload :userId
 
-router.param('novedadesId', novedadesController.load);//autoload :novedadesId
+
 
 //Novedades
 
@@ -110,11 +110,16 @@ router.delete('/users/:userId(\\d+)', 			sessionController.adminRequired, 	userC
 var serviciosController = require('../controllers/servicios_controller');
 var proyectosController = require('../controllers/proyectos_controller');
 var inicioController = require('../controllers/inicio_controller');
+var novedadesController = require('../controllers/novedades_controller');
+
+router.param('novedadesId', novedadesController.load);//autoload :novedadesId
 
 /* GET home page. */
 router.get('/', inicioController.index);
 
 //Rutas de la web.
+router.get('/novedades', novedadesController.index);
+
 router.get('/servicios', serviciosController.index);
 router.get('/servicios/videojuegos', serviciosController.videojuegos);
 

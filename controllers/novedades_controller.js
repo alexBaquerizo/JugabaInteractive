@@ -22,7 +22,7 @@ exports.load = function(req, res, next, novedadesId) {
 exports.index = function(req, res) {
 	models.Novedades.findAll().then(
 		function(novedades){
-			res.render('index.', {novedades: novedades});
+			res.render('novedades/index.ejs', {novedades: novedades});
 		}
 	).catch(function(error){next(error);})
 };
