@@ -15,22 +15,20 @@
 	position:relative;
 	float:left;
 
-	background-color: #e3e0e3;
-	-webkit-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
-	-moz-box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
-	box-shadow: inset 0px 0px 20px -2px rgba(122,122,122,0.64);
-	
+	background: #FFFFFF;
+
 	border-width: thin; 
 	border-style: solid;
-	border-color: #b5b5b5;
+	border-color: #CDCDCD;
 
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
 }
 
 .titulos_principales h2{
-	font-size:1em;
+	font-size:1.8em;
 	text-align:center;
 }
 

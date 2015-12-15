@@ -19,6 +19,8 @@ var Profesor = sequelize.import(path.join(__dirname, 'profesor'));
 var Quiz = sequelize.import(path.join(__dirname, 'quiz'));
 var User = sequelize.import(path.join(__dirname, 'user'));
 
+var Novedades = sequelize.import(path.join(__dirname, 'novedades')); 
+
 
 Comment.belongsTo(Quiz);
 Quiz.hasMany(Comment);
@@ -38,6 +40,67 @@ Cuestionario.hasMany(CuestionarioAsignado);
 
 // sequelize.sync() crea e inicializa tabla de preguntas en DB
 sequelize.sync().then(function() {
+
+	Novedades.count().then(function(count) {
+		if(count === 0) { // la tabla se inicializa solo si está vacía
+		Novedades.create({ 
+
+					titulo: 'Novedad',
+					resumen: 'Esto es un resumen pequeño de la noticia',
+					contenido: 'Esto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		Novedades.create({ 
+
+					titulo: 'Novedad 2',
+					resumen: 'Esto es una segunda noticia :D',
+					contenido: 'Esto es una noticia de prueba Esto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		Novedades.create({ 
+
+					titulo: 'Novedad3',
+					resumen: 'Esto es un resumen pequeño de la noticia Esto es un resumen pequeño de la noticia Esto es un resumen pequeño de la noticia ueño de la noticia Esto es un resumen pequeño de la noticia',
+					contenido: 'Esto es una noticia de prueba Esto es una noticia de pruebaEsto es una noticia de pruebaEsto es una noticia de pruebaEsto es una noticia de pruebaEsto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		Novedades.create({ 
+
+					titulo: 'Novedad 5',
+					resumen: 'Esto es una segunda noticia :D',
+					contenido: 'Esto es una noticia de prueba Esto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		Novedades.create({ 
+
+					titulo: 'Novedad 5',
+					resumen: 'Esto es un resumen pequeño de la noticia',
+					contenido: 'Esto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		Novedades.create({ 
+
+					titulo: 'Novedad 6',
+					resumen: 'Esto es una segunda noticia :D',
+					contenido: 'Esto es una noticia de prueba Esto es una noticia de prueba',
+					categoria: 1,
+					fecha: new Date()
+		})
+
+		.then(function(){console.log('Tabla Novedades inicializada')});
+		};
+	});
+
 	// then(..) ejecuta el manejador una vez creada la tabla
 	User.count().then(function(count) {
 		if(count === 0) { // la tabla se inicializa solo si está vacía
@@ -111,3 +174,5 @@ exports.Observacion = Observacion;
 exports.Profesor = Profesor;
 exports.Quiz = Quiz; 
 exports.User = User;
+
+exports.Novedades = Novedades;

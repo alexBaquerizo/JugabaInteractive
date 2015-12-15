@@ -6,17 +6,18 @@
     width:70%;
 }
 .ca-menu li{
-    margin-left:0;
     width:auto;
+     margin: 2% 0;
     height: 100px;
     overflow: hidden;
     position: relative;
     display: block;
-    background: #fff;
+
+    background: #45D4FB;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    margin-bottom: 5px;
+   
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -35,13 +36,11 @@
     position: relative;
 }
 .ca-icon{
-    font-size: 20px;
-    text-shadow: 0px 0px 1px #333;
-    line-height: 90px;
     position: absolute;
-    width: 90px;
-    left: 20px;
-    text-align: center;
+    width: 60px;
+    left: 30px;
+    top:20%;
+
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -53,7 +52,7 @@
     left: 120px;
     width: 800px;
     height: 60px;
-    top: 5px;
+    top: 10%;
 }
 .ca-main{
     font-size: 1.5em;
@@ -64,6 +63,7 @@
     transition: all 300ms linear;
 }
 .ca-sub{
+    margin-top: -2%;
     font-size:0.8em;
     color: #666;
     -webkit-transition: all 300ms linear;
